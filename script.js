@@ -5,12 +5,12 @@ let n = document.querySelector(".new")
 let me = document.querySelector(".me")
 let msg = document.querySelector(".msg")
 
-let arr = [login,n,me,msg]
+let arr = ["Login Succesful","new email","Meeting in 10 miniutes","New Messeage"]
 let i = 0;
 btn.addEventListener("click",()=>{
     for(let i = 0;i<4;i++){
         setTimeout(() => {
-          arr[i].style.visibility = "visible"
+          alert(arr[i])
           }, 2000 * i);
     }
 })
